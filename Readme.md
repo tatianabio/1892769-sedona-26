@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Tatiana Pugacheva](https://up.htmlacademy.ru/adaptive/26/user/1892769).
-* Наставник: `Неизвестно`.
+* Наставник: [Валя Видяева](https://htmlacademy.ru/profile/id189794).
 
 ---
 
