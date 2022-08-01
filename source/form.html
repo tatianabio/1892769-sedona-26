@@ -59,15 +59,15 @@
           <fieldset class="form-review__fieldset fieldset">
             <legend class="fieldset__legend legend">Представьтесь:</legend>
 
-            <label class="fieldset__label label--input-text" for="name">Имя*:</label>
+            <label class="fieldset__label label label--primary" for="name">Имя*:</label>
             <input class="fieldset__input input-text" type="text" id="name" name="name" placeholder="Имя" value="Пётр"
                    required>
 
-            <label class="fieldset__label label--input-text" for="surname">Фамилия*:</label>
+            <label class="fieldset__label label label--primary" for="surname">Фамилия*:</label>
             <input class="fieldset__input input-text" type="text" id="surname" name="surname" placeholder="Фамилия"
                    value="Пустота" required>
 
-            <label class="fieldset__label label--input-text" for="patronymic">Отчество:</label>
+            <label class="fieldset__label label label--primary" for="patronymic">Отчество:</label>
             <input class="fieldset__input input-text" type="text" id="patronymic" name="patronymic"
                    placeholder="Отчество"
                    value="Викторович">
@@ -76,11 +76,11 @@
           <fieldset class="form-review__fieldset fieldset">
             <legend class="fieldset__legend legend">Контактная информация:</legend>
 
-            <label class="fieldset__label label--input-contacts" for="phone">Контактный телефон*:</label>
+            <label class="fieldset__label label label--primary" for="phone">Контактный телефон*:</label>
             <input class="fieldset__input input-contacts input-contacts--tel" type="tel" id="phone" name="phone"
                    placeholder="Введите телефон" required>
 
-            <label class="fieldset__label label--input-contacts" for="email">Электронная почта*:</label>
+            <label class="fieldset__label label label--primary" for="email">Электронная почта*:</label>
             <input class="fieldset__input input-contacts input-contacts--email" type="email" id="email" name="email"
                    placeholder="Введите e-mail" required>
           </fieldset>
@@ -88,29 +88,50 @@
           <fieldset class="form-review__fieldset fieldset">
             <legend class="fieldset__legend legend">Ваше общее впечатление:</legend>
 
-            <label class="fieldset__label label--input-radio">
-              <input class="fieldset__input-radio" type="radio" name="general impression" value="positive" checked>
-              <span class="fieldset__label-radio">Скорее положительное</span>
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="radio" name="general impression" value="positive" checked>
+              <span class="fieldset__label">Скорее положительное</span>
             </label>
 
-            <label class="fieldset__label label--input-radio">
-              <input class="fieldset__input-radio" type="radio" name="general impression" value="negative">
-              <span class="fieldset__label-radio">Скорее отрицательное</span>
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="radio" name="general impression" value="negative">
+              <span class="fieldset__label">Скорее отрицательное</span>
             </label>
 
-            <label class="fieldset__label label--input-radio">
-              <input class="fieldset__input-radio" type="radio" name="general impression" value="unknown">
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="radio" name="general impression" value="unknown">
               <span class="fieldset__label-radio">Затрудняюсь ответить</span>
             </label>
-
           </fieldset>
 
           <fieldset class="form-review__fieldset fieldset">
             <legend class="fieldset__legend legend">Посещенные достопримечательности:</legend>
+
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="checkbox" name="devil's bridge" checked>
+              <span class="fieldset__label-radio">Мост Дьявола</span>
+            </label>
+
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="checkbox" name="mountain-bell" checked>
+              <span class="fieldset__label">Гора-Колокол</span>
+            </label>
+
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="checkbox" name="slide-park" checked>
+              <span class="fieldset__label">Слайд-парк</span>
+            </label>
+
+            <label class="fieldset__label label label--secondary">
+              <input class="fieldset__input" type="checkbox" name="red rocks">
+              <span class="fieldset__label">Красные скалы</span>
+            </label>
           </fieldset>
 
           <fieldset class="form-review__fieldset fieldset">
             <legend class="fieldset__legend legend">Опишите свои эмоции:</legend>
+            <label class="visually-hidden" for="text-review">Напишите развернутый отзыв.</label>
+            <textarea class="fieldset__textarea" id="text-review" name="text-review" cols="30" rows="5">Опишите подробно все свои восторги</textarea>
           </fieldset>
 
           <button class="form-review__button-submit button" type="submit">Отправить отзыв</button>
