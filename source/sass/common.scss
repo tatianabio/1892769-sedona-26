@@ -1,0 +1,9 @@
+@use "./mixins";
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.visually-hidden {
+  @include mixins.visually-hidden;
+}

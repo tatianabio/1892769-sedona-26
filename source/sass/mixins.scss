@@ -1,0 +1,22 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin basic-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin heading-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
