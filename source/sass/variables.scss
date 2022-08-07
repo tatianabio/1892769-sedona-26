@@ -1,0 +1,13 @@
+:root {
+  --text-primary: #000000;
+  --text-primary-hover: #81b3d2;
+  --text-primary-active: #b3b3b3;
+  --text-primary-current: #766357;
+  --text-secondary: #333333;
+  --text-inverted: #ffffff;
+  --text-inverted-hover: var(--text-inverted);
+  --text-inverted-active: rgba(255, 255, 255, 0.3);
+  --text-inverted-disabled: var(--text-inverted);
+  --text-placeholder: rgba(0, 0, 0, 0.3);
+  --text-additional: rgba(51, 51, 51, 0.6);
+}
