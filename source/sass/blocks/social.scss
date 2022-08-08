@@ -1,0 +1,5 @@
+@use "../mixins" as *;
+
+.social__list {
+  @include list-style-reset;
+}
