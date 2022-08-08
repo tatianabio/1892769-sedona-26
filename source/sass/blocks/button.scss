@@ -1,0 +1,10 @@
+@use "../mixins" as *;
+
+.button {
+  @include text-xl-bold(var(--text-inverted));
+  display: inline-block;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  background-color: var(--button-primary);
+  cursor: pointer;
+}
