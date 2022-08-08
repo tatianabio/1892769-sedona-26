@@ -1,0 +1,6 @@
+@use "../mixins" as *;
+
+.heading {
+  @include text-l-bold;
+  margin: 0;
+}
