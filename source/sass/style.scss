@@ -1,4 +1,3 @@
-// Начните писать стили здесь
 @use "fonts";
 @use "normalize";
 @use "common";
@@ -36,3 +35,5 @@
 @use "./blocks/control-label";
 @use "./blocks/textarea";
 @use "./blocks/form-remark";
+@use "./blocks/modal-container";
+@use "./blocks/modal";
