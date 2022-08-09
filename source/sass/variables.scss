@@ -33,6 +33,14 @@
   --button-inverted: var(--basic-secondary);
   --button-inverted-hover: rgba(255, 255, 255, 0.6);
   --button-inverted-active: rgba(255, 255, 255, 0.3);
-  //Цвета для форм TODO добавить оставшиеся из стайлгайда
+  //Цвета для форм
   --form-primary: #f2f2f2;
+  --form-primary-hover: #e5e5e5;
+  --form-primary-active: var(--basic-secondary);
+  --form-secondary: var(--basic-tertiary);
+  --form-secondary-hover: var(--form-secondary);
+  --form-secondary-active: rgba(51, 51, 51, 0.3);
+  --form-control: var(--form-primary);
+  --form-control-hover: var(--form-primary-hover);
+  --form-control-active: #d5d5d5;
 }
