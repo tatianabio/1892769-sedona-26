@@ -1,0 +1,13 @@
+@use "../mixins" as *;
+
+.text-input {
+  @include text-l-bold(var(--text-primary), none);
+  font-family: "PT Sans", sans-serif;
+  background-color: var(--form-primary);
+  border: none;
+  padding: 16px;
+
+  &::placeholder {
+    color: var(--text-placeholder);
+  }
+}
