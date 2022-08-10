@@ -1,0 +1,9 @@
+@use "../mixins" as *;
+
+.fieldset {
+  padding: 24px 0;
+}
+
+.fieldset__list {
+  @include list-style-reset;
+}

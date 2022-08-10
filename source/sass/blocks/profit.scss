@@ -1,0 +1,21 @@
+.profit {
+  //Потом скорректировать внутренний отступ
+  padding: 26px;
+
+  &--primary {
+    background-color: var(--background-inverted);
+    color: var(--text-inverted);
+  }
+
+  &--primary .profit__title {
+    color: var(--text-inverted);
+  }
+
+  &--primary .profit__description {
+    color: var(--text-inverted);
+  }
+
+  &--secondary {
+    background-color: var(--background-secondary);
+  }
+}

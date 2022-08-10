@@ -1,0 +1,12 @@
+.modal {
+  width: 400px;
+  min-height: 350px;
+  background-color: var(--background-primary);
+  //TODO уточнить паддинги для разных форм на разных разрешениях экрана
+  padding: 50px;
+}
+
+.modal__button-wrapper {
+  background-color: var(--background-tertiary);
+  padding: 44px;
+}

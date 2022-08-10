@@ -1,0 +1,24 @@
+@use "../mixins" as *;
+
+.card__photo {
+  display: block;
+}
+
+.card__title {
+  @include text-m-bold;
+  margin: 0;
+}
+
+.card__info {
+  @include text-m-normal(var(--text-primary), none);
+  margin: 0;
+}
+
+.card__info-term {
+  display: inline;
+}
+
+.card__info-description {
+  display: inline;
+  margin-left: 0;
+}

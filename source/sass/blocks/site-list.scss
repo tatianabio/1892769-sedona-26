@@ -1,0 +1,11 @@
+@use "../mixins" as *;
+
+.site-list {
+  @include list-style-reset;
+}
+
+.site-list__link {
+  @include text-l-bold(var(--text-inverted));
+  background-color: var(--background-inverted);
+  cursor: pointer;
+}

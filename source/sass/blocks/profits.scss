@@ -1,0 +1,13 @@
+@use "../mixins" as *;
+
+.profits__intro {
+  padding: 32px 20px;
+}
+
+.profits__list {
+  @include list-style-reset;
+}
+
+.profits__extra-list {
+  @include list-style-reset;
+}

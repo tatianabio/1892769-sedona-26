@@ -1,0 +1,5 @@
+@use "../mixins" as *;
+
+.likes-counter {
+  @include text-m-bold;
+}

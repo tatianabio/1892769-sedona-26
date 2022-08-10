@@ -1,0 +1,5 @@
+@use "../mixins" as *;
+
+.link-hashtag {
+  @include text-xl-bold;
+}
