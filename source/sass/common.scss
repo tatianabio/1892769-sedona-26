@@ -2,7 +2,7 @@
 
 body {
   @include text-m-normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: var(--basic-font);
 }
 
 .visually-hidden {
