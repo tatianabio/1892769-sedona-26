@@ -5,13 +5,17 @@
 }
 
 .page__body {
-  background-color: var(--background-additional);
-  min-height: 100%;
   display: grid;
+  min-height: 100%;
+  background-color: var(--background-tertiary);
 }
 
 .page__container {
-  background-color: var(--background-primary);
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--background-primary);
 }

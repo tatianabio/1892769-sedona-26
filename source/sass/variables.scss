@@ -1,8 +1,9 @@
+//Величины вьюпортов
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: 767px;
+
 :root {
-  //Величины вьюпортов
-  --tablet-width: 768px;
-  --desktop-width: 1280px;
-  --mobile-width-only: 767px;
   //Основной шрифт
   --basic-font: "PT Sans", sans-serif;
   //Основные цвета проекта

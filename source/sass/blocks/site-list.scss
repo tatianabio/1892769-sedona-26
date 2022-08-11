@@ -1,7 +1,13 @@
 @use "../mixins" as *;
+@use "../variables" as v;
 
 .site-list {
   @include list-style-reset;
+  display: grid;
+
+  @media (min-width: v.$tablet-width) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .site-list__link {
