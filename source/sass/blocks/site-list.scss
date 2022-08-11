@@ -7,6 +7,14 @@
 
   @media (min-width: v.$tablet-width) {
     grid-template-columns: repeat(5, 1fr);
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
   }
 }
 
