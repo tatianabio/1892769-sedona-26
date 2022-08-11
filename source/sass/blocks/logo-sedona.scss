@@ -3,14 +3,6 @@
 .logo-sedona {
   display: block;
   cursor: pointer;
-  margin: 0 auto;
-
-  @media (min-width: v.$tablet-width) {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translateX(50%);
-  }
 }
 
 .logo-sedona__image {
