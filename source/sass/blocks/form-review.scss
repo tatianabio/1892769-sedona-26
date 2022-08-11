@@ -1,0 +1,14 @@
+@use "../variables" as v;
+
+.form-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-review__wrapper {
+  display: grid;
+
+  @media (min-width: v.$tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
