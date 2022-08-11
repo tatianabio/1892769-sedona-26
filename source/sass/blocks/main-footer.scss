@@ -1,3 +1,29 @@
+@use "../variables" as v;
+
 .main-footer {
-  padding: 36px 45px;
+  display: grid;
+  gap: 33px;
+  place-items: center;
+  padding: 20px 18px;
+
+  @media (min-width: v.$tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 36px 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 36px 120px;
+  }
+}
+
+.main-footer__link-hashtag {
+  @media (min-width: v.$tablet-width) {
+    justify-self: start;
+  }
+}
+
+.main-footer__copyright {
+  @media (min-width: v.$tablet-width) {
+    justify-self: end;
+  }
 }

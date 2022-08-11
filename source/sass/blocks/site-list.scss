@@ -26,7 +26,6 @@
 .site-list__link {
   @include text-l-bold(var(--text-inverted));
   display: block;
-  width: 100%;
   padding-top: 17px;
   padding-bottom: 12px;
   text-align: center;
