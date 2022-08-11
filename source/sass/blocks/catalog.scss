@@ -1,0 +1,13 @@
+@use "../variables" as v;
+
+.catalog__intro-wrapper {
+  padding: 33px 20px 20px;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 60px;
+  }
+}
+
+.catalog__title {
+  margin-bottom: 30px;
+}
