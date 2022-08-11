@@ -1,9 +1,21 @@
+@use "../variables" as v;
+
 .inner-page-header {
+  position: relative;
+  min-height: 158px;
   background-color: var(--background-inverted);
-  background-image: url("../img/sedona-background.jpg");
+  background-image: url("../img/sedona-background-full.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: v.$tablet-width) {
+    min-height: 260px;
+  }
 }
 
 .inner-page-header__image {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   display: block;
 }
