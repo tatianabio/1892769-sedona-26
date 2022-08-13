@@ -1,6 +1,6 @@
 //Величины вьюпортов
 $tablet-width: 768px;
-$desktop-width: 1280px;
+$desktop-width: 1200px;
 $mobile-width-only: 767px;
 
 :root {
@@ -29,6 +29,7 @@ $mobile-width-only: 767px;
   --background-inverted: var(--basic-primary);
   --background-additional: #e7e5e5;
   --background-semi-transparent: rgba(0, 0, 0, 0.3);
+  --background-shadow: rgba(0, 1, 1, 0.2);
   //Цвета для кнопок
   --button-primary: var(--basic-primary);
   --button-primary-hover: #669ec0;

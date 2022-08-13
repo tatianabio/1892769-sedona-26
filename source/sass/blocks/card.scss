@@ -8,7 +8,7 @@
     padding: 0;
   }
 
-  &--most-popular {
+  &--full-width {
     @media (min-width: v.$tablet-width) {
       grid-column: 1 / -1;
     }
