@@ -1,3 +1,17 @@
+@use "../variables" as v;
+
 .video-presentation {
-  padding: 17px 27px 0;
+  padding: 17px 20px 0;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 60px;
+  }
+}
+
+.video-presentation__title {
+  margin-bottom: 30px;
+}
+
+.video-presentation__description {
+  margin-bottom: 38px;
 }

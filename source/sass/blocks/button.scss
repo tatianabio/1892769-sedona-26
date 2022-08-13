@@ -2,9 +2,12 @@
 
 .button {
   @include text-xl-bold(var(--text-inverted));
-  display: inline-block;
+  display: block;
   border: none;
+  max-width: 458px;
+  padding: 16px 30px;
   font-family: var(--basic-font);
+  text-align: center;
   background-color: var(--button-primary);
   cursor: pointer;
 }

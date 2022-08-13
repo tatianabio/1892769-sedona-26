@@ -1,1 +1,7 @@
-// TODO Добавить стили
+@use "../variables" as v;
+
+.main-navigation__toggle {
+  @media (min-width: v.$tablet-width) {
+    display: none;
+  }
+}

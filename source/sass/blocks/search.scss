@@ -1,3 +1,31 @@
+@use "../variables" as v;
+
 .search {
-  padding: 38px 18px 10px;
+  padding-top: 38px;
+  padding-bottom: 10px;
+
+  @media (min-width: v.$tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.search__wrapper {
+  padding: 0 18px 49px;
+}
+
+.search__title {
+  margin-bottom: 25px;
+}
+
+.search__description {
+  margin-bottom: 32px;
+}
+
+.search__button {
+  margin: 0 auto;
 }

@@ -1,6 +1,13 @@
+@use "../variables" as v;
+
 .profit {
   //Потом скорректировать внутренний отступ
   padding: 26px;
+  width: 100%;
+
+  @media (min-width: v.$tablet-width) {
+    width: 33.33%;
+  }
 
   &--primary {
     background-color: var(--background-inverted);
@@ -18,4 +25,9 @@
   &--secondary {
     background-color: var(--background-secondary);
   }
+}
+
+.profit__serial-number {
+  display: block;
+  text-align: center;
 }

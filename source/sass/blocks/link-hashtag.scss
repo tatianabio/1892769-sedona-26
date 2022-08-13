@@ -2,4 +2,7 @@
 
 .link-hashtag {
   @include text-xl-bold;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

@@ -1,0 +1,13 @@
+@use "../variables" as v;
+
+.profit-extra {
+  padding: 11px 20px;
+  width: 100%;
+  min-height: 113px;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 36px 60px;
+    width: 33.33%;
+    min-height: 330px;
+  }
+}

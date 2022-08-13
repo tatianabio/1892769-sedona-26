@@ -1,9 +1,22 @@
+@use "../variables" as v;
+
 .index-header {
+  position: relative;
+  min-height: 389px;
   background-color: var(--background-additional);
-  background-image: url("../img/welcome-background.jpg");
+  background-image: url("../img/welcome-background-full.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: v.$tablet-width) {
+    min-height: 518px;
+  }
 }
 
 .index-header__welcome {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   display: block;
 }

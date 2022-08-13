@@ -1,4 +1,19 @@
 @use "../mixins" as *;
+@use "../variables" as v;
+
+.card {
+  padding: 24px 0;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 0;
+  }
+
+  &--full-width {
+    @media (min-width: v.$tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+}
 
 .card__photo {
   display: block;

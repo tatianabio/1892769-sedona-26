@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Фото и видео</title>
     <link href="./css/style.css" rel="stylesheet" />
   </head>
@@ -50,17 +51,19 @@
           />
         </header>
 
-        <h1 class="catalog__title heading">Фото и видео</h1>
-        <p class="catalog__description text-description">
-          Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике
-          и&nbsp;экономике.
-        </p>
+        <div class="catalog__intro-wrapper">
+          <h1 class="catalog__title heading">Фото и видео</h1>
+          <p class="catalog__description text-description">
+            Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике
+            и&nbsp;экономике.
+          </p>
+        </div>
 
         <section class="catalog__photo-gallery photo-gallery">
           <h2 class="visually-hidden">Фото-галерея.</h2>
 
           <ul class="photo-gallery__list">
-            <li class="photo-gallery__item card card--most-popular">
+            <li class="photo-gallery__item card card--full-width">
               <a
                 class="card__full-photo-link"
                 href="#"
