@@ -3,6 +3,9 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
 
+//
+$logo-shift: 40px;
+
 :root {
   //Основной шрифт
   --basic-font: "PT Sans", sans-serif;
@@ -41,6 +44,8 @@ $mobile-width-only: 767px;
   --button-inverted: var(--basic-secondary);
   --button-inverted-hover: rgba(255, 255, 255, 0.6);
   --button-inverted-active: rgba(255, 255, 255, 0.3);
+  --button-shadow-primary: rgba(1, 1, 1, 0.2);
+  --button-shadow-secondary: rgba(255, 255, 255, 0.2);
   //Цвета для форм
   --form-primary: #f2f2f2;
   --form-primary-hover: #e5e5e5;
