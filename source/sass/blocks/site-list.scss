@@ -38,7 +38,16 @@
     padding-bottom: 17px;
     background-color: var(--background-primary);
 
-    &--current {
+    &:hover {
+      color: var(--text-primary-hover);
+    }
+
+    &:active {
+      color: var(--text-primary-active);
+    }
+
+    &--current,
+    &--current:hover {
       color: var(--text-primary-current);
       cursor: default;
     }
