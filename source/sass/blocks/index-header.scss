@@ -19,6 +19,7 @@
     background-image: url("../img/welcome-divider.svg");
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 1px 1px 0 var(--background-primary);
   }
 
   @media (min-width: v.$tablet-width) {
