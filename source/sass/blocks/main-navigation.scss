@@ -20,13 +20,13 @@
     z-index: 2;
   }
 
-  .main-navigation--nojs .main-navigation__toggle {
-    display: none;
-  }
-
   .main-navigation--nojs .site-list {
     position: static;
     margin-top: v.$logo-shift;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
   }
 }
 
