@@ -1,14 +1,6 @@
 @use "../variables" as v;
 
 .profit {
-  //Потом скорректировать внутренний отступ
-  padding: 26px;
-  width: 100%;
-
-  @media (min-width: v.$tablet-width) {
-    width: 33.33%;
-  }
-
   &--primary {
     background-color: var(--background-inverted);
     color: var(--text-inverted);
@@ -27,7 +19,65 @@
   }
 }
 
+
+@media (max-width: v.$mobile-width-only) {
+  .profit {
+    position: relative;
+    padding: 24px 20px;
+    width: 100%;
+    min-height: 165px;
+
+    &--primary {
+      min-height: 191px;
+      padding-top: 39px;
+      padding-bottom: 35px;
+    }
+
+    &--secondary + &--secondary::after {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      content: "";
+      width: 88.75%;
+      height: 1px;
+      background-color: var(--background-divider);
+    }
+
+    &--decorated {
+      min-height: 227px;
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    &--decorated::after {
+      position: absolute;
+      top: -1px;
+      right: 50%;
+      transform: translateX(50%);
+      content: "";
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/profit-top-decoration.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: v.$tablet-width) {
+  .profit {
+    width: 33.33%;
+  }
+}
+
+.profit__title {
+  margin-bottom: 11px;
+}
+
 .profit__serial-number {
   display: block;
+  margin-bottom: 17px;
   text-align: center;
 }
