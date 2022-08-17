@@ -20,6 +20,14 @@
     top: 0;
     left: 20px;
   }
+
+  @media (min-width: v.$tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: v.$mobile-width-only) {
@@ -27,6 +35,10 @@
     padding: 8px 20px 22px 65px;
     width: 100%;
     min-height: 113px;
+  }
+
+  .profit-extra--souvenirs br {
+    display: none;
   }
 
   .profit-extra .profit-extra__title {
@@ -40,8 +52,24 @@
 
 @media (min-width: v.$tablet-width) {
   .profit-extra {
-    padding: 36px 60px;
+    padding: 158px 30px 59px;
     width: 33.33%;
     min-height: 330px;
+  }
+
+  .profit-extra--souvenirs br {
+    display: none;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .profit-extra__description {
+    max-width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profit-extra--souvenirs br {
+    display: inline;
   }
 }

@@ -51,6 +51,7 @@
   @include list-style-reset;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @media (max-width: v.$mobile-width-only) {
     margin-top: 23px;
