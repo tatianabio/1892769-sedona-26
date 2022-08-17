@@ -1,5 +1,6 @@
 .social-link {
-  display: block;
+  display: grid;
+  place-content: center;
   width: 48px;
   height: 48px;
   color: var(--text-inverted);

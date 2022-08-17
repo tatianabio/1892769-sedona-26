@@ -4,7 +4,10 @@
   display: grid;
   gap: 33px;
   place-items: center;
-  padding: 20px 18px;
+
+  @media (max-width: v.$mobile-width-only) {
+    padding: 30px 18px 20px;
+  }
 
   @media (min-width: v.$tablet-width) {
     grid-template-columns: repeat(3, 1fr);
