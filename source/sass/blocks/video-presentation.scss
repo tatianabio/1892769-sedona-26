@@ -1,17 +1,49 @@
+@use "../mixins" as *;
 @use "../variables" as v;
 
 .video-presentation {
-  padding: 17px 20px 0;
+  @media (max-width: v.$mobile-width-only) {
+    padding: 17px 20px 0;
+  }
 
   @media (min-width: v.$tablet-width) {
-    padding: 60px;
+    padding: 58px 60px 40px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 84px;
   }
 }
 
+.video-presentation__player {
+  position: relative;
+}
+
 .video-presentation__title {
-  margin-bottom: 30px;
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    @include text-xxl-bold;
+    margin-bottom: 35px;
+  }
 }
 
 .video-presentation__description {
-  margin-bottom: 38px;
+  @media (max-width: v.$mobile-width-only) {
+    max-width: 260px;
+    margin: 0 auto 38px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.video-presentation__description br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
 }

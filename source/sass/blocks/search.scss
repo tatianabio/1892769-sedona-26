@@ -1,6 +1,12 @@
 @use "../mixins" as *;
 @use "../variables" as v;
 
+.search {
+  @media (max-width: v.$mobile-width-only) {
+    padding-bottom: 10px;
+  }
+}
+
 .search__wrapper {
   @media (max-width: v.$mobile-width-only) {
     padding: 38px 18px 49px;
