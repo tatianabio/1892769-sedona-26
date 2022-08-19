@@ -2,9 +2,6 @@
 @use "../variables" as v;
 
 .photo-gallery {
-  padding-right: 20px;
-  padding-left: 20px;
-
   @media (min-width: v.$tablet-width) {
     padding-right: 60px;
     padding-left: 60px;
@@ -26,5 +23,15 @@
 
   @media (min-width: v.$desktop-width) {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.photo-gallery__item:nth-child(2n + 3) .card__caption {
+  @media (min-width: v.$tablet-width) {
+    background-color: var(--background-solid);
+  }
+
+  @media (min-width: v.$desktop-width) {
+    background-color: var(--background-semi-transparent);
   }
 }

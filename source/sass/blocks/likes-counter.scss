@@ -1,5 +1,31 @@
 @use "../mixins" as *;
+@use "../variables" as v;
 
 .likes-counter {
   @include text-m-bold;
+  position: relative;
+
+  @media (max-width: v.$mobile-width-only) {
+    padding-left: 37px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    padding-left: 32px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    color: var(--text-inverted);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 21px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    //Убрать цвет фона, задать svg в домашке в разделе 6
+    background-color: var(--background-inverted);
+  }
 }
