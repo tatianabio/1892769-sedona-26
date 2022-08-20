@@ -64,7 +64,7 @@
                 <h2 class="fieldset__title heading">Представьтесь:</h2>
                 <ul class="fieldset__list">
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="name">Имя*:</label>
+                    <label class="field__label field__label--text text-label" for="name">Имя*:</label>
                     <input
                       class="field__input text-input"
                       type="text"
@@ -77,7 +77,7 @@
                   </li>
 
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="surname">Фамилия*:</label>
+                    <label class="field__label field__label--text text-label" for="surname">Фамилия*:</label>
                     <input
                       class="field__input text-input"
                       type="text"
@@ -90,7 +90,7 @@
                   </li>
 
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="patronymic">Отчество:</label>
+                    <label class="field__label field__label--text text-label" for="patronymic">Отчество:</label>
                     <input
                       class="field__input text-input"
                       type="text"
@@ -107,27 +107,31 @@
                 <h2 class="fieldset__title heading">Контактная информация:</h2>
                 <ul class="fieldset__list">
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="phone">Контактный телефон*:</label>
-                    <input
-                      class="field__input text-input text-input--tel"
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Введите телефон"
-                      required
-                    />
+                    <label class="field__label field__label--text text-label" for="phone">Контактный телефон*:</label>
+                    <div class="field__input field__input-decorated field__input-decorated--tel">
+                      <input
+                        class="text-input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Введите телефон"
+                        required
+                      />
+                    </div>
                   </li>
 
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="email">Электронная почта*:</label>
-                    <input
-                      class="field__input text-input text-input--email"
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Введите e-mail"
-                      required
-                    />
+                    <label class="field__label field__label--text text-label" for="email">Электронная почта*:</label>
+                    <div class="field__input field__input-decorated field__input-decorated--email">
+                      <input
+                        class="text-input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Введите e-mail"
+                        required
+                      />
+                    </div>
                   </li>
                 </ul>
               </div>

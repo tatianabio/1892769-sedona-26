@@ -13,9 +13,21 @@
 }
 
 .form-review__wrapper {
+  position: relative;
   display: grid;
 
   @media (min-width: v.$tablet-width) {
     grid-template-columns: 1fr 1fr;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: var(--background-divider-secondary);
+    }
   }
 }
