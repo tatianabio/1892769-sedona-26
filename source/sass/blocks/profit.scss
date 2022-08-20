@@ -87,6 +87,10 @@
     min-height: 256px;
     padding: 42px 32px;
   }
+
+  .profit--devil-bridge {
+    order: 1;
+  }
 }
 
 @media (min-width: v.$desktop-width) {
@@ -110,7 +114,6 @@
     display: none;
   }
 }
-
 
 .profit--devil-bridge br {
   @media (max-width: v.$mobile-width-only) {
