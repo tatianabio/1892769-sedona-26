@@ -1,8 +1,15 @@
 @use "../variables" as v;
 
 .form-review {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  @media (min-width: v.$tablet-width) {
+    row-gap: 48px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    row-gap: 56px;
+  }
 }
 
 .form-review__wrapper {

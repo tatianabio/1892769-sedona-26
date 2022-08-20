@@ -1,9 +1,44 @@
 @use "../mixins" as *;
+@use "../variables" as v;
 
 .fieldset {
-  padding: 24px 0;
+  position: relative;
+}
+
+@media (max-width: v.$mobile-width-only) {
+  .fieldset {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &--text-inputs {
+      padding-bottom: 36px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      content: "";
+      width: 115%;
+      height: 1px;
+      background-color: var(--background-divider-secondary);
+    }
+  }
+}
+
+.fieldset__title {
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .fieldset__list {
   @include list-style-reset;
+  display: grid;
+  row-gap: 16px;
 }
