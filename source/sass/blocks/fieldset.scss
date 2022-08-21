@@ -33,6 +33,7 @@
   }
 
   @media (min-width: v.$tablet-width) {
+    @include text-xl-bold;
     margin-bottom: 28px;
   }
 }
@@ -41,4 +42,24 @@
   @include list-style-reset;
   display: grid;
   row-gap: 16px;
+
+  &--name {
+    @media (min-width: v.$tablet-width) {
+      padding-right: 43px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      padding-right: 63px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: v.$tablet-width) {
+      padding-left: 44px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      padding-left: 64px;
+    }
+  }
 }
