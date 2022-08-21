@@ -41,6 +41,12 @@
   background-color: var(--form-control-hover);
 }
 
+.control__input:focus + .control__mark {
+  background-color: var(--form-control-hover);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--basic-primary);
+}
+
 .control__input:active + .control__mark {
   background-color: var(--form-control-active);
 }
