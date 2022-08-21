@@ -1,8 +1,10 @@
 @use "../mixins" as *;
+@use "../variables" as v;
 
 .textarea {
   @include text-l-bold(var(--text-primary), none);
   width: 100%;
+  display: block;
   font-family: var(--basic-font);
   background-color: var(--form-primary);
   border: none;
@@ -11,5 +13,13 @@
 
   &::placeholder {
     color: var(--text-placeholder);
+  }
+
+  @media (max-width: v.$mobile-width-only) {
+    min-height: 150px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    min-height: 160px;
   }
 }
