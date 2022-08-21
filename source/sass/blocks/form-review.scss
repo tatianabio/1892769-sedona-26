@@ -4,11 +4,21 @@
   display: grid;
 
   @media (min-width: v.$tablet-width) {
-    row-gap: 48px;
+    row-gap: 42px;
   }
 
   @media (min-width: v.$desktop-width) {
-    row-gap: 56px;
+    row-gap: 48px;
+  }
+}
+
+.form-review__fieldset--control {
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 8px;
   }
 }
 
@@ -19,6 +29,7 @@
   @media (min-width: v.$tablet-width) {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 15px;
+    margin-bottom: 6px;
 
     &::after {
       position: absolute;
@@ -30,6 +41,10 @@
       height: 100%;
       background-color: var(--background-divider-secondary);
     }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 8px;
   }
 }
 
