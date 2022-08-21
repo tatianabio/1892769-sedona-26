@@ -141,36 +141,45 @@
               <div class="fieldset__line-container">
                 <h2 class="fieldset__title fieldset__title--decorated heading">Ваше общее впечатление:</h2>
               </div>
-              <ul class="fieldset__list">
+              <ul class="fieldset__list fieldset__list--radio">
                 <li class="fieldset__item field">
-                  <input
-                    class="visually-hidden"
-                    type="radio"
-                    id="positive"
-                    name="general-impression"
-                    value="positive"
-                    checked
-                  />
-                  <span class="field__control control control--radio"></span>
-                  <label class="field__label control-label" for="positive">Скорее положительное</label>
+                  <label class="field__control control">
+                    <input
+                      class="control__input visually-hidden"
+                      type="radio"
+                      name="general-impression"
+                      value="positive"
+                      checked
+                    />
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Скорее положительное</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input
-                    class="visually-hidden"
-                    type="radio"
-                    id="negative"
-                    name="general-impression"
-                    value="negative"
-                  />
-                  <span class="field__control control control--radio"></span>
-                  <label class="field__label control-label" for="negative">Скорее отрицательное</label>
+                  <label class="field__control control">
+                    <input
+                      class="control__input visually-hidden"
+                      type="radio"
+                      name="general-impression"
+                      value="negative"
+                    />
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Скорее отрицательное</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input class="visually-hidden" type="radio" id="unknown" name="general-impression" value="unknown" />
-                  <span class="field__control control control--radio"></span>
-                  <label class="field__label control-label" for="unknown">Затрудняюсь ответить</label>
+                  <label class="field__control control">
+                    <input
+                      class="control__input visually-hidden"
+                      type="radio"
+                      name="general-impression"
+                      value="unknown"
+                    />
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Затрудняюсь ответить</span>
+                  </label>
                 </li>
               </ul>
             </div>
@@ -179,29 +188,37 @@
               <div class="fieldset__line-container">
                 <h2 class="fieldset__title fieldset__title--decorated heading">Посещенные достопримечательности:</h2>
               </div>
-              <ul class="fieldset__list">
+              <ul class="fieldset__list fieldset__list--checkbox">
                 <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="devil-bridge" name="devil-bridge" checked />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="devil-bridge">Мост Дьявола</label>
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="devil-bridge" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Мост Дьявола</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="mountain-bell" name="mountain-bell" checked />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="mountain-bell">Гора-Колокол</label>
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="mountain-bell" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Гора-Колокол</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="slide-park" name="slide-park" checked />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="slide-park">Слайд-парк</label>
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Слайд-парк</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="red-rocks" name="red-rocks" />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="red-rocks">Красные скалы</label>
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="red-rocks" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Красные скалы</span>
+                  </label>
                 </li>
               </ul>
             </div>

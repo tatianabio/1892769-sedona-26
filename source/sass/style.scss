@@ -32,7 +32,6 @@
 @use "./blocks/field";
 @use "./blocks/text-label";
 @use "./blocks/text-input";
-@use "./blocks/control-label";
 @use "./blocks/form-remark";
 @use "./blocks/modal-container";
 @use "./blocks/modal";
@@ -42,3 +41,4 @@
 @use "./blocks/map";
 @use "./blocks/button-control";
 @use "./blocks/video-player";
+@use "./blocks/control";
