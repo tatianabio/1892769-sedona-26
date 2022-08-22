@@ -13,7 +13,7 @@
           <img class="logo-sedona__image" src="./img/logo.svg" alt="Логотип города Седона." width="185" height="96" />
         </a>
 
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
@@ -54,17 +54,17 @@
         <section class="form-section">
           <h1 class="form-section__title heading">Оставьте свой отзыв</h1>
           <p class="form-section__description text-description">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами
-            достопримечательностях
+            Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них,<br />
+            а&nbsp;также о посещенных вами достопримечательностях
           </p>
 
           <form class="form-section__form-review form-review" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-review__wrapper">
-              <div class="form-review__fieldset fieldset">
+              <div class="form-review__fieldset fieldset fieldset--text-inputs">
                 <h2 class="fieldset__title heading">Представьтесь:</h2>
-                <ul class="fieldset__list">
+                <ul class="fieldset__list fieldset__list--name">
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="name">Имя*:</label>
+                    <label class="field__label field__label--text text-label" for="name">Имя*:</label>
                     <input
                       class="field__input text-input"
                       type="text"
@@ -77,7 +77,7 @@
                   </li>
 
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="surname">Фамилия*:</label>
+                    <label class="field__label field__label--text text-label" for="surname">Фамилия*:</label>
                     <input
                       class="field__input text-input"
                       type="text"
@@ -90,7 +90,7 @@
                   </li>
 
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="patronymic">Отчество:</label>
+                    <label class="field__label field__label--text text-label" for="patronymic">Отчество:</label>
                     <input
                       class="field__input text-input"
                       type="text"
@@ -103,121 +103,150 @@
                 </ul>
               </div>
 
-              <div class="form-review__fieldset fieldset">
+              <div class="form-review__fieldset fieldset fieldset--text-inputs">
                 <h2 class="fieldset__title heading">Контактная информация:</h2>
-                <ul class="fieldset__list">
+                <ul class="fieldset__list fieldset__list--contacts">
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="phone">Контактный телефон*:</label>
-                    <input
-                      class="field__input text-input text-input--tel"
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Введите телефон"
-                      required
-                    />
+                    <label class="field__label field__label--text text-label" for="phone">Контактный телефон*:</label>
+                    <div class="field__input field__input-decorated field__input-decorated--tel">
+                      <input
+                        class="text-input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Введите телефон"
+                        required
+                      />
+                    </div>
                   </li>
 
                   <li class="fieldset__item field">
-                    <label class="field__label text-label" for="email">Электронная почта*:</label>
-                    <input
-                      class="field__input text-input text-input--email"
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Введите e-mail"
-                      required
-                    />
+                    <label class="field__label field__label--text text-label" for="email">Электронная почта*:</label>
+                    <div class="field__input field__input-decorated field__input-decorated--email">
+                      <input
+                        class="text-input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Введите e-mail"
+                        required
+                      />
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div class="form-review__fieldset fieldset">
-              <h2 class="fieldset__title heading">Ваше общее впечатление:</h2>
-              <ul class="fieldset__list">
+            <div class="form-review__fieldset form-review__fieldset--control fieldset">
+              <div class="fieldset__line-container">
+                <h2 class="fieldset__title fieldset__title--decorated heading">Ваше общее впечатление:</h2>
+              </div>
+              <ul class="fieldset__list fieldset__list--radio">
                 <li class="fieldset__item field">
-                  <input
-                    class="visually-hidden"
-                    type="radio"
-                    id="positive"
-                    name="general-impression"
-                    value="positive"
-                    checked
-                  />
-                  <span class="field__control control control--radio"></span>
-                  <label class="field__label control-label" for="positive">Скорее положительное</label>
+                  <label class="field__control control">
+                    <input
+                      class="control__input visually-hidden"
+                      type="radio"
+                      name="general-impression"
+                      value="positive"
+                      checked
+                    />
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Скорее положительное</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input
-                    class="visually-hidden"
-                    type="radio"
-                    id="negative"
-                    name="general-impression"
-                    value="negative"
-                  />
-                  <span class="field__control control control--radio"></span>
-                  <label class="field__label control-label" for="negative">Скорее отрицательное</label>
+                  <label class="field__control control">
+                    <input
+                      class="control__input visually-hidden"
+                      type="radio"
+                      name="general-impression"
+                      value="negative"
+                    />
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Скорее отрицательное</span>
+                  </label>
                 </li>
 
                 <li class="fieldset__item field">
-                  <input class="visually-hidden" type="radio" id="unknown" name="general-impression" value="unknown" />
-                  <span class="field__control control control--radio"></span>
-                  <label class="field__label control-label" for="unknown">Затрудняюсь ответить</label>
+                  <label class="field__control control">
+                    <input
+                      class="control__input visually-hidden"
+                      type="radio"
+                      name="general-impression"
+                      value="unknown"
+                    />
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-review__fieldset form-review__fieldset--control fieldset">
+              <div class="fieldset__line-container">
+                <h2 class="fieldset__title fieldset__title--decorated heading">Посещенные достопримечательности:</h2>
+              </div>
+              <ul class="fieldset__list fieldset__list--checkbox">
+                <li class="fieldset__item field">
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="devil-bridge" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Мост Дьявола</span>
+                  </label>
+                </li>
+
+                <li class="fieldset__item field">
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="mountain-bell" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Гора-Колокол</span>
+                  </label>
+                </li>
+
+                <li class="fieldset__item field">
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Слайд-парк</span>
+                  </label>
+                </li>
+
+                <li class="fieldset__item field">
+                  <label class="field__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="red-rocks" checked />
+                    <span class="control__mark control__mark--checkbox"></span>
+                    <span class="control__label">Красные скалы</span>
+                  </label>
                 </li>
               </ul>
             </div>
 
             <div class="form-review__fieldset fieldset">
-              <h2 class="fieldset__title heading">Посещенные достопримечательности:</h2>
-              <ul class="fieldset__list">
-                <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="devil-bridge" name="devil-bridge" checked />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="devil-bridge">Мост Дьявола</label>
-                </li>
-
-                <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="mountain-bell" name="mountain-bell" checked />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="mountain-bell">Гора-Колокол</label>
-                </li>
-
-                <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="slide-park" name="slide-park" checked />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="slide-park">Слайд-парк</label>
-                </li>
-
-                <li class="fieldset__item field">
-                  <input class="visually-hidden" type="checkbox" id="red-rocks" name="red-rocks" />
-                  <span class="field__control control control--checkbox"></span>
-                  <label class="field__label control-label" for="red-rocks">Красные скалы</label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="form-review__fieldset fieldset">
-              <h2 class="fieldset__title heading">Опишите свои эмоции:</h2>
+              <div class="fieldset__line-container">
+                <h2 class="fieldset__title fieldset__title--decorated heading">Опишите свои эмоции:</h2>
+              </div>
               <label class="visually-hidden" for="text-review">Напишите развернутый отзыв.</label>
               <textarea
                 class="fieldset__textarea textarea"
                 id="text-review"
                 name="text-review"
                 cols="30"
-                rows="5"
+                rows="4"
                 placeholder="Опишите подробно все свои восторги"
               ></textarea>
             </div>
 
-            <button class="form-review__button button" type="submit">Отправить отзыв</button>
-            <span class="form-review__remark form-remark">* &mdash; Обязательные поля</span>
+            <div class="form-review__button-wrapper">
+              <button class="form-review__button button" type="submit">Отправить отзыв</button>
+              <span class="form-review__remark form-remark">* &mdash; Обязательные поля</span>
+            </div>
           </form>
         </section>
       </main>
 
-      <div class="modal-container modal-container--close">
+      <div class="modal-container">
         <div class="modal-container__modal modal modal--hint-error">
           <section class="modal__content">
             <h2 class="modal__title heading">Что-то пошло не&nbsp;так!</h2>
@@ -348,5 +377,7 @@
         </a>
       </footer>
     </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

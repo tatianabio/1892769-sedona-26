@@ -1,13 +1,37 @@
+@use "../mixins" as *;
 @use "../variables" as v;
 
 .catalog__intro-wrapper {
-  padding: 33px 20px 20px;
+  @media (max-width: v.$mobile-width-only) {
+    padding: 37px 20px 30px;
+  }
 
   @media (min-width: v.$tablet-width) {
-    padding: 60px;
+    padding: 66px 60px 74px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-top: 100px;
   }
 }
 
 .catalog__title {
-  margin-bottom: 30px;
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    @include text-xxl-bold;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.catalog__description br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
 }

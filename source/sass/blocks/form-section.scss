@@ -1,3 +1,51 @@
+@use "../mixins" as *;
+@use "../variables" as v;
+
 .form-section {
-  padding: 36px 20px 24px;
+  @media (max-width: v.$mobile-width-only) {
+    padding: 36px 20px 24px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    padding: 64px 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 115px 120px 64px;
+  }
+}
+
+.form-section__title {
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    @include text-xxl-bold;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.form-section__description {
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.form-section__description br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
 }

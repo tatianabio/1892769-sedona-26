@@ -1,9 +1,21 @@
+@use "../mixins" as *;
+@use "../variables" as v;
+
 .modal {
-  width: 400px;
-  min-height: 350px;
   background-color: var(--background-primary);
-  //TODO уточнить паддинги для разных форм на разных разрешениях экрана
-  padding: 50px;
+
+  @media (max-width: v.$mobile-width-only) {
+    width: 100%;
+    min-height: 280px;
+
+    &--hint-error {
+      padding: 45px 42px 35px;
+    }
+
+    &--hint-success {
+      padding: 39px 38px 0;
+    }
+  }
 }
 
 .modal__button-wrapper {

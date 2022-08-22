@@ -1,12 +1,19 @@
+@use "../mixins" as *;
 @use "../variables" as v;
 
 .search {
-  padding-top: 38px;
-  padding-bottom: 10px;
+  @media (max-width: v.$mobile-width-only) {
+    padding-bottom: 10px;
+  }
+}
+
+.search__wrapper {
+  @media (max-width: v.$mobile-width-only) {
+    padding: 38px 18px 49px;
+  }
 
   @media (min-width: v.$tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 58px;
+    padding: 60px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -14,16 +21,35 @@
   }
 }
 
-.search__wrapper {
-  padding: 0 18px 49px;
-}
-
 .search__title {
-  margin-bottom: 25px;
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    @include text-xxl-bold;
+    margin-bottom: 33px;
+  }
 }
 
 .search__description {
-  margin-bottom: 32px;
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.search__description br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
 }
 
 .search__button {

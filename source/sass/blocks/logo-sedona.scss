@@ -3,6 +3,14 @@
 .logo-sedona {
   display: block;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .logo-sedona__image {

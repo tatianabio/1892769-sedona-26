@@ -1,1 +1,34 @@
-// TODO Добавить стили
+@use "../mixins" as *;
+@use "../variables" as v;
+
+.field__input {
+  position: relative;
+}
+
+.field__input-decorated {
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: var(--form-additional);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--tel::after {
+    background-image: url("../img/icons/icon-phone.svg");
+  }
+
+  &--email::after {
+    background-image: url("../img/icons/icon-email.svg");
+  }
+}
+
+.field__label {
+  &--text {
+    margin-left: 16px;
+  }
+}

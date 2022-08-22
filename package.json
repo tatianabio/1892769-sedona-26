@@ -20,7 +20,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "check": "yarn editorconfig && yarn stylelint && yarn lint"
   },
   "browserslist": [
     "last 2 versions",

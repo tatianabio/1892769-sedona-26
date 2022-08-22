@@ -1,0 +1,34 @@
+.button-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 48px;
+    height: 54px;
+    background-image: url("../img/icons/button-control.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:active::after {
+    opacity: 0.4;
+  }
+}

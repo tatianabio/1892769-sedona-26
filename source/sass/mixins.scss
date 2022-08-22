@@ -46,6 +46,14 @@
   text-transform: $text-transform;
 }
 
+@mixin text-xxl-bold($color: var(--text-primary), $text-transform: uppercase) {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  color: $color;
+  text-transform: $text-transform;
+}
+
 @mixin list-style-reset {
   list-style: none;
   margin: 0;
