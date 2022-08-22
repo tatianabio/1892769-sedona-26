@@ -80,13 +80,26 @@
                     Седона не&nbsp;аттракцион для туристов, там течет своя жизнь
                   </p>
                 </div>
-                <img
-                  class="illustrated-profit__image"
-                  src="./img/sedona-city.jpg"
-                  alt="Улицы Седоны."
-                  width="320"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    class="illustrated-profit__image"
+                    srcset="./img/sedona-city-desktop@1x.jpg, ./img/sedona-city-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    class="illustrated-profit__image"
+                    srcset="./img/sedona-city-tablet@1x.jpg, ./img/sedona-city-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="illustrated-profit__image"
+                    src="./img/sedona-city-phone@1x.jpg"
+                    srcset="./img/sedona-city-phone@2x.jpg 2x"
+                    alt="Улицы Седоны."
+                    width="800"
+                    height="260"
+                  />
+                </picture>
               </div>
 
               <h4 class="visually-hidden">
@@ -117,7 +130,7 @@
               </ul>
             </li>
 
-            <li class="profits__item illustrated-profit">
+            <li class="profits__item illustrated-profit illustrated-profit--reversed">
               <div class="illustrated-profit__text profit profit--primary profit--devil-bridge">
                 <h3 class="profit__title heading">
                   Там есть<br />
@@ -129,13 +142,26 @@
                   Если вы осмелитесь, конечно
                 </p>
               </div>
-              <img
-                class="illustrated-profit__image"
-                src="./img/devil-bridge.jpg"
-                alt="Скалы моста дьявола."
-                width="320"
-                height="260"
-              />
+              <picture>
+                <source
+                  class="illustrated-profit__image"
+                  srcset="./img/devil-bridge-desktop@1x.jpg, ./img/devil-bridge-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  class="illustrated-profit__image"
+                  srcset="./img/devil-bridge-tablet@1x.jpg, ./img/devil-bridge-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="illustrated-profit__image"
+                  src="./img/devil-bridge-phone@1x.jpg"
+                  srcset="./img/devil-bridge-phone@2x.jpg 2x"
+                  alt="Скалы моста дьявола."
+                  width="800"
+                  height="260"
+                />
+              </picture>
             </li>
 
             <li class="profits__item profit profit--secondary">
