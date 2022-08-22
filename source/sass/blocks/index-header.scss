@@ -46,7 +46,7 @@
     }
 
     @media (min-width: v.$desktop-width) {
-      background-image: url("../img/welcome-background-desktop@2x.jpg")
+      background-image: url("../img/welcome-background-desktop@2x.jpg");
     }
   }
 }
@@ -55,6 +55,12 @@
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(50%, -51%);
   display: block;
+
+  @media (max-width: v.$mobile-width-only) {
+    width: 282px;
+    height: 214px;
+    transform: translate(50%, -50%);
+  }
 }
