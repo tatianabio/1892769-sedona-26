@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <!--    <link rel="icon" href="favicon.ico" />-->
   </head>
   <body class="page__body">
     <div class="page__container">
       <header class="main-header">
-        <a class="main-header__logo-sedona logo-sedona" href="index.html">
+        <a class="main-header__logo-sedona logo-sedona">
           <img class="logo-sedona__image" src="./img/logo.svg" alt="Логотип города Седона." width="185" height="96" />
         </a>
 
@@ -42,13 +43,17 @@
 
       <main class="main-container">
         <header class="main-container__header index-header">
-          <img
-            class="index-header__welcome"
-            src="./img/welcome.svg"
-            alt="Welcome to the gorgeous Sedona: because the Grand Canyon sucks!"
-            width="282"
-            height="214"
-          />
+          <picture>
+            <source class="index-header__welcome" srcset="./img/welcome-desktop.svg" media="(min-width: 1200px)" />
+            <source class="index-header__welcome" srcset="./img/welcome-tablet.svg" media="(min-width: 768px)" />
+            <img
+              class="index-header__welcome"
+              src="./img/welcome-phone.svg"
+              alt="Welcome to the gorgeous Sedona: because the Grand Canyon sucks!"
+              width="461"
+              height="350"
+            />
+          </picture>
         </header>
 
         <section class="profits">
@@ -75,13 +80,24 @@
                     Седона не&nbsp;аттракцион для туристов, там течет своя жизнь
                   </p>
                 </div>
-                <img
-                  class="illustrated-profit__image"
-                  src="./img/sedona-city.jpg"
-                  alt="Улицы Седоны."
-                  width="320"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="./img/sedona-city-desktop@1x.jpg, ./img/sedona-city-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/sedona-city-tablet@1x.jpg, ./img/sedona-city-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="illustrated-profit__image"
+                    src="./img/sedona-city-phone@1x.jpg"
+                    srcset="./img/sedona-city-phone@2x.jpg 2x"
+                    alt="Улицы Седоны."
+                    width="800"
+                    height="260"
+                  />
+                </picture>
               </div>
 
               <h4 class="visually-hidden">
@@ -112,7 +128,7 @@
               </ul>
             </li>
 
-            <li class="profits__item illustrated-profit">
+            <li class="profits__item illustrated-profit illustrated-profit--reversed">
               <div class="illustrated-profit__text profit profit--primary profit--devil-bridge">
                 <h3 class="profit__title heading">
                   Там есть<br />
@@ -124,13 +140,24 @@
                   Если вы осмелитесь, конечно
                 </p>
               </div>
-              <img
-                class="illustrated-profit__image"
-                src="./img/devil-bridge.jpg"
-                alt="Скалы моста дьявола."
-                width="320"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/devil-bridge-desktop@1x.jpg, ./img/devil-bridge-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/devil-bridge-tablet@1x.jpg, ./img/devil-bridge-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="illustrated-profit__image"
+                  src="./img/devil-bridge-phone@1x.jpg"
+                  srcset="./img/devil-bridge-phone@2x.jpg 2x"
+                  alt="Скалы моста дьявола."
+                  width="800"
+                  height="260"
+                />
+              </picture>
             </li>
 
             <li class="profits__item profit profit--secondary">

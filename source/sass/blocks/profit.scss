@@ -86,10 +86,14 @@
     width: 33.33%;
     min-height: 256px;
     padding: 42px 32px;
-  }
 
-  .profit--devil-bridge {
-    order: 1;
+    &--primary {
+      width: 100%;
+    }
+
+    &--devil-bridge {
+      order: 1;
+    }
   }
 }
 

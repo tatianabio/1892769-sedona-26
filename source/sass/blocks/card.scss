@@ -39,15 +39,28 @@
 
 .card__photo {
   display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 
   @media (max-width: v.$mobile-width-only) {
     margin: 0 auto 15px;
+    height: 280px;
+    max-width: 360px;
   }
+}
 
-  @media (min-width: v.$tablet-width) {
-    width: 100%;
-    object-fit: cover;
-  }
+.card__full-photo-link:hover .card__photo {
+  opacity: 0.8;
+}
+
+.card__full-photo-link:focus .card__photo {
+  outline: none;
+  box-shadow: 0 0 0 5px var(--basic-primary);
+}
+
+.card__full-photo-link:active .card__photo {
+  opacity: 0.5;
 }
 
 .card__title {
