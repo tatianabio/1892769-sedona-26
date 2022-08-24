@@ -27,11 +27,7 @@
 
   @media (min-width: v.$tablet-width) {
     min-height: 518px;
-    background-image: url("../img/welcome-background-tablet@1x.jpg");
-  }
-
-  @media (min-width: v.$desktop-width) {
-    background-image: url("../img/welcome-background-desktop@1x.jpg");
+    background-image: url("../img/welcome-background-full@1x.jpg");
   }
 }
 
@@ -39,14 +35,12 @@
   .index-header {
     @media (max-width: v.$mobile-width-only) {
       background-image: url("../img/welcome-background-phone@2x.jpg");
+      background-size: 901px auto;
     }
 
     @media (min-width: v.$tablet-width) {
-      background-image: url("../img/welcome-background-tablet@2x.jpg");
-    }
-
-    @media (min-width: v.$desktop-width) {
-      background-image: url("../img/welcome-background-desktop@2x.jpg");
+      background-image: url("../img/welcome-background-full@2x.jpg");
+      background-size: 1200px auto;
     }
   }
 }
