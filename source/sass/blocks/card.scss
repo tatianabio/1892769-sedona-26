@@ -49,6 +49,19 @@
   }
 }
 
+.card__full-photo-link:hover .card__photo {
+  opacity: 0.8;
+}
+
+.card__full-photo-link:focus .card__photo {
+  outline: none;
+  box-shadow: 0 0 0 5px var(--basic-primary);
+}
+
+.card__full-photo-link:active .card__photo {
+  opacity: 0.5;
+}
+
 .card__title {
   @include text-m-bold;
   margin: 0;
