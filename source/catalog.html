@@ -242,8 +242,10 @@
           </p>
 
           <div class="video-presentation__player video-player">
-            <video class="video-player__video-frame" poster="./img/video-poster.jpg">
-              <source class="video-player__source" src="#" type="video/mp4" />
+            <video class="video-player__video-frame video-player__video-frame--paused">
+              <source src="#" type="video/mp4" />
+              <source src="#" type="video/ogg" />
+              <source src="#" type="video/webm" />
             </video>
             <button class="video-player__button-control button-control" type="button">
               <span class="visually-hidden">
