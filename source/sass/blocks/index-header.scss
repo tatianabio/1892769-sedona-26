@@ -52,9 +52,8 @@
   transform: translate(50%, -51%);
   display: block;
 
-  @media (max-width: v.$mobile-width-only) {
-    width: 282px;
-    height: 214px;
-    transform: translate(50%, -50%);
+  @media (min-width: v.$tablet-width) {
+    width: 460px;
+    height: 350px;
   }
 }
