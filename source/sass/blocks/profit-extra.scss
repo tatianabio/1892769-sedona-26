@@ -6,19 +6,32 @@
 
 .profit-extra {
   position: relative;
+
+  &--accommodation::before {
+    background-image: url("../img/icons/house-icon.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/icons/burger-icon.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("../img/icons/present-icon.svg");
+  }
 }
 
 .profit-extra::before {
   position: absolute;
   content: "";
-  //Убрать цвет фона, задать svg в домашке в разделе 6
-  background-color: var(--background-inverted);
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (max-width: v.$mobile-width-only) {
     width: 40px;
     height: 40px;
     top: 0;
     left: 20px;
+    background-size: 40px 40px;
   }
 
   @media (min-width: v.$tablet-width) {
