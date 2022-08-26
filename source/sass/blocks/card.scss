@@ -76,10 +76,6 @@
   @include text-m-normal(var(--text-secondary), none);
   margin: 0;
 
-  @media (max-width: v.$mobile-width-only) {
-    margin-bottom: 11px;
-  }
-
   @media (min-width: v.$desktop-width) {
     color: var(--text-inverted);
   }
@@ -112,6 +108,10 @@
 }
 
 .card__wrapper {
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 11px;
+  }
+
   @media (min-width: v.$tablet-width) {
     margin-right: 20px;
   }
