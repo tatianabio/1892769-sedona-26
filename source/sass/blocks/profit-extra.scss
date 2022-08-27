@@ -8,15 +8,15 @@
   position: relative;
 
   &--accommodation::before {
-    background-image: url("../img/icons/house-icon.svg");
+    background-image: url("../img/icons/house.svg");
   }
 
   &--food::before {
-    background-image: url("../img/icons/burger-icon.svg");
+    background-image: url("../img/icons/burger.svg");
   }
 
   &--souvenirs::before {
-    background-image: url("../img/icons/present-icon.svg");
+    background-image: url("../img/icons/present.svg");
   }
 }
 
