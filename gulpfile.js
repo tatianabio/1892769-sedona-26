@@ -11,7 +11,7 @@ import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
-// import del from "del";
+import del from "del";
 
 // Styles
 
@@ -28,7 +28,7 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -37,7 +37,7 @@ export const html = () => {
 
 // Scripts
 
-export const scripts = () => {
+const scripts = () => {
   return gulp.src("source/js/*.js")
     .pipe(terser())
     .pipe(gulp.dest("build/js"));
@@ -56,7 +56,7 @@ const copyImages = () => {
 };
 
 // WebP
-export const createWebP = () => {
+const createWebP = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh({ webp: {} }))
@@ -65,18 +65,36 @@ export const createWebP = () => {
 
 // SVG
 
-export const svg = () => {
+const svg = () => {
   return gulp.src(["source/img/**/*.svg", "!source/img/icons/sprite/*.svg"])
     .pipe(svgo())
     .pipe(gulp.dest("build/img/"));
 };
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src("source/img/icons/sprite/*.svg")
     .pipe(svgo())
     .pipe(svgstore( { inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/icons"));
+};
+
+// Copy
+
+const copy = (done) => {
+  return gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico" // TODO перенести манифест для фавиконок
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+};
+
+// Clean
+
+const clean = () => {
+  return del("build");
 };
 
 // Server
@@ -93,17 +111,52 @@ const server = (done) => {
   done();
 };
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/*.html").on("change", browser.reload);
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
-export default gulp.series(
-  html,
-  styles,
-  scripts,
-  server,
-  watcher
+// Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel (
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebP
+  ),
 );
+
+// Default
+
+export default gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel (
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebP
+  ),
+  gulp.series (
+    server,
+    watcher
+  ));
