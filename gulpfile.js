@@ -42,8 +42,21 @@ export const scripts = () => {
 };
 
 // Images
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png}").pipe(squoosh()).pipe(gulp.dest("build/img"));
+};
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
+};
 
 // WebP
+export const createWebP = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh({ webp: {} }))
+    .pipe(gulp.dest("build/img"));
+};
 
 // SVG
 
