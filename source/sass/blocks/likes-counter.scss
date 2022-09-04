@@ -12,6 +12,7 @@
 .likes-counter__like-icon {
   color: var(--background-semi-transparent);
   display: inline-block;
+  fill: currentColor;
 
   @media (min-width: v.$desktop-width) {
     color: inherit;

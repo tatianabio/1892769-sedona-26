@@ -5,6 +5,7 @@
   margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media (max-width: v.$mobile-width-only) {
     width: 280px;
@@ -28,17 +29,14 @@
 @media (min-resolution: 2dppx) {
   .video-player {
     @media (max-width: v.$mobile-width-only) {
-      background-size: 280px 177px;
       background-image: url("../img/video-poster-phone@2x.jpg");
     }
 
     @media (min-width: v.$tablet-width) {
-      background-size: 648px 500px;
       background-image: url("../img/video-poster-tablet@2x.jpg");
     }
 
     @media (min-width: v.$desktop-width) {
-      background-size: 800px 500px;
       background-image: url("../img/video-poster-desktop@2x.jpg");
     }
   }

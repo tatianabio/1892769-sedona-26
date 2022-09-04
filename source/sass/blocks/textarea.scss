@@ -31,10 +31,10 @@
   }
 
   @media (max-width: v.$mobile-width-only) {
-    min-height: 150px;
+    height: 150px;
   }
 
   @media (min-width: v.$tablet-width) {
-    min-height: 160px;
+    height: 160px;
   }
 }
