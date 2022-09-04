@@ -9,7 +9,7 @@ import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
-import svgo from "gulp-svgmin";
+import svgo from "gulp-svgo";
 import svgstore from "gulp-svgstore";
 import del from "del";
 
@@ -73,7 +73,11 @@ const svg = () => {
 
 const sprite = () => {
   return gulp.src("source/img/icons/sprite/*.svg")
-    .pipe(svgo())
+    .pipe(svgo({
+      plugins: [
+        {removeAttrs: {attrs: "fill"}}
+      ]
+    }))
     .pipe(svgstore( { inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/icons"));
