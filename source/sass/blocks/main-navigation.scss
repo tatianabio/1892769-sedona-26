@@ -20,9 +20,13 @@
     z-index: 2;
   }
 
-  .main-navigation--nojs .site-list {
+  .main-navigation--nojs {
     position: static;
     margin-top: v.$logo-shift;
+  }
+
+  .main-navigation--nojs .site-list {
+    display: block;
   }
 
   .main-navigation--nojs .main-navigation__toggle {
