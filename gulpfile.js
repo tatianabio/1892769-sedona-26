@@ -88,7 +88,8 @@ const sprite = () => {
 const copy = (done) => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico" // TODO перенести манифест для фавиконок
+    "source/*.ico",
+    "source/*.webmanifest"
   ], {
     base: "source"
   })
