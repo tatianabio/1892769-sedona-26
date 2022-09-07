@@ -77,6 +77,7 @@
     min-width: 180px;
 
     &--decorated {
+      @include text-l-bold(var(--text-inverted));
       width: 280px;
     }
   }
