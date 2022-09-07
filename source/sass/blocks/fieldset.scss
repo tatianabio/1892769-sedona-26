@@ -35,6 +35,12 @@
   @media (min-width: v.$tablet-width) {
     @include text-xl-bold;
     margin-bottom: 28px;
+
+    &--column {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

@@ -2,7 +2,7 @@
 
 .main-footer {
   display: grid;
-  gap: 33px;
+  gap: 30px;
   place-items: center;
 
   @media (max-width: v.$mobile-width-only) {
@@ -11,11 +11,11 @@
 
   @media (min-width: v.$tablet-width) {
     grid-template-columns: repeat(3, 1fr);
-    padding: 36px 60px;
+    padding: 33px 60px;
   }
 
   @media (min-width: v.$desktop-width) {
-    padding: 36px 120px;
+    padding: 33px 120px;
   }
 }
 
