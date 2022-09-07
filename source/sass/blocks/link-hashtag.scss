@@ -1,9 +1,9 @@
 @use "../mixins" as *;
+@use "../variables" as v;
 
 .link-hashtag {
   @include text-xl-bold;
   display: block;
-  padding-top: 10px;
 
   &:hover {
     color: var(--text-primary-hover);
