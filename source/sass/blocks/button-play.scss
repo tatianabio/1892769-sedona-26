@@ -1,3 +1,5 @@
+@use "../variables" as v;
+
 .button-play {
   position: absolute;
   top: 0;
@@ -14,7 +16,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     content: "";
     width: 48px;
     height: 54px;
@@ -22,6 +23,14 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.7;
+
+    @media (max-width: v.$mobile-width-only) {
+      transform: translate(-33%, -50%);
+    }
+
+    @media (min-width: v.$tablet-width) {
+      transform: translate(-50%, -50%);
+    }
   }
 
   &:hover::after {

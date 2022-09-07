@@ -29,6 +29,10 @@
     @include text-xxl-bold;
     margin-bottom: 35px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .video-presentation__description {
@@ -38,7 +42,7 @@
   }
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 84px;
+    margin-bottom: 86px;
   }
 }
 
