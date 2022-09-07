@@ -2,7 +2,7 @@
 
 .main-footer {
   display: grid;
-  gap: 30px;
+  gap: 32px;
   place-items: center;
 
   @media (max-width: v.$mobile-width-only) {
@@ -26,6 +26,10 @@
 }
 
 .main-footer__copyright {
+  @media (max-width: v.$mobile-width-only) {
+   align-self: start;
+  }
+
   @media (min-width: v.$tablet-width) {
     justify-self: end;
   }

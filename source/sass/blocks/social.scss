@@ -1,4 +1,5 @@
 @use "../mixins" as *;
+@use "../variables" as v;
 
 .social__list {
   @include list-style-reset;
@@ -8,8 +9,14 @@
 }
 
 .social__item {
-  margin-bottom: 3px;
-  margin-top: 3px;
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
 }
 
 .social__item + .social__item {
