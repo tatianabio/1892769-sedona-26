@@ -23,9 +23,15 @@
   margin-bottom: 11px;
 }
 
+.profit__title br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
+}
+
 .profit__serial-number {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   text-align: center;
 }
 
@@ -75,7 +81,7 @@
   }
 
   .profit--secondary .profit__description {
-    max-width: 246px;
+    max-width: 248px;
     margin-left: auto;
     margin-right: auto;
   }
