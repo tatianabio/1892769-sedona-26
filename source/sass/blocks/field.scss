@@ -3,6 +3,12 @@
 
 .field__input {
   position: relative;
+
+  &--patronymic {
+    @media (max-width: v.$mobile-width-only) {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .field__input-decorated {

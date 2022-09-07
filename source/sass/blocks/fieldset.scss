@@ -130,6 +130,10 @@
 }
 
 .fieldset__textarea {
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: v.$tablet-width) {
     margin-bottom: 6px;
   }
