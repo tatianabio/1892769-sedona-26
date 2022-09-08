@@ -4,8 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
-    <!--    <link rel="icon" href="favicon.ico" />-->
-    <link href="./css/style.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -68,7 +73,7 @@
               <div class="profits__item illustrated-profit">
                 <div class="illustrated-profit__text profit profit--primary profit--decorated profit--real-city">
                   <h3 class="profit__title heading">
-                    Настоящий<br />
+                    Настоящий&#8196;<br />
                     городок
                   </h3>
                   <span class="profit__serial-number">— №1 —</span>
@@ -104,6 +109,7 @@
                     src="./img/sedona-city-phone@1x.jpg"
                     srcset="./img/sedona-city-phone@2x.jpg 2x"
                     alt="Улицы Седоны."
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -129,7 +135,7 @@
                 <li class="profits__extra-item profit-extra profit-extra--souvenirs">
                   <h5 class="profit-extra__title heading">Сувениры</h5>
                   <p class="profit-extra__description text-description">
-                    Не&nbsp;только китайского,<br />
+                    Не&nbsp;только китайского,&#8196;<br />
                     но и местного производства!
                   </p>
                 </li>
@@ -138,13 +144,13 @@
 
             <li class="profits__item illustrated-profit illustrated-profit--reversed">
               <div class="illustrated-profit__text profit profit--primary profit--devil-bridge">
-                <h3 class="profit__title heading">
-                  Там есть<br />
+                <h3 class="profit__title profit__title--devil-bridge heading">
+                  Там есть&#8196;<br />
                   мост дьявола
                 </h3>
                 <span class="profit__serial-number">— №2 —</span>
-                <p class="profit__description text-description">
-                  Да, по&nbsp;нему можно пройти! <br />
+                <p class="profit__description profit__description--devil-bridge text-description">
+                  Да, по&nbsp;нему можно пройти!&#8196;<br />
                   Если вы осмелитесь, конечно
                 </p>
               </div>
@@ -176,13 +182,14 @@
                   src="./img/devil-bridge-phone@1x.jpg"
                   srcset="./img/devil-bridge-phone@2x.jpg 2x"
                   alt="Скалы моста дьявола."
+                  loading="lazy"
                 />
               </picture>
             </li>
 
             <li class="profits__item profit profit--secondary">
               <h3 class="profit__title heading">
-                Небольшая<br />
+                Небольшая&#8196;<br />
                 площадь
               </h3>
               <span class="profit__serial-number">— №3 —</span>
@@ -191,24 +198,24 @@
 
             <li class="profits__item profit profit--secondary">
               <h3 class="profit__title heading">
-                Красивая<br />
+                Красивая&#8196;<br />
                 дорога
               </h3>
               <span class="profit__serial-number">— №4 —</span>
               <p class="profit__description text-description">
-                Ехать в&nbsp;Седону из <br />Лас-Вегаса совсем не&nbsp;скучно!
+                Ехать в&nbsp;Седону из&#8196;<br />Лас-Вегаса совсем не&nbsp;скучно!
               </p>
             </li>
 
             <li class="profits__item profit profit--secondary">
               <h3 class="profit__title heading">
-                Мало<br />
+                Мало&#8196;<br />
                 туристов
               </h3>
               <span class="profit__serial-number">— №5 —</span>
               <p class="profit__description text-description">
-                Большинство едет в<br />
-                Гранд Каньон и <br />толпится там
+                Большинство едет в&#8196;<br />
+                Гранд&nbsp;Каньон и&#8196;<br />толпится там
               </p>
             </li>
           </ol>
@@ -218,7 +225,7 @@
           <div class="search__wrapper">
             <h2 class="search__title heading">Заинтересовались?</h2>
             <p class="search__description text-description">
-              Укажите предполагаемые даты поездки,<br />
+              Укажите предполагаемые даты поездки,&ensp;<br />
               и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Cедоне
             </p>
             <a class="search__button button" href="#">Найти гостиницу</a>

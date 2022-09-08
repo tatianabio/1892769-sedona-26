@@ -3,6 +3,8 @@
 
 
 .form-remark {
+  max-width: 300px;
+
   @media (max-width: v.$mobile-width-only) {
     @include text-s-normal(var(--text-additional));
   }

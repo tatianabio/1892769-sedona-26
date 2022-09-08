@@ -21,6 +21,7 @@
   }
 
   @media (min-width: v.$tablet-width) {
+    @include text-xl-bold;
     margin-bottom: 30px;
   }
 }

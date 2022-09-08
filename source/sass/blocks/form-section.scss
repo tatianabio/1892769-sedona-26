@@ -17,16 +17,16 @@
 
 .form-section__title {
   @media (max-width: v.$mobile-width-only) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: v.$tablet-width) {
     @include text-xxl-bold;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: v.$desktop-width) {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 102px;
+    margin-bottom: 105px;
   }
 
   @media (min-width: v.$desktop-width) {

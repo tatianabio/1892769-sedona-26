@@ -1,11 +1,10 @@
 @use "../variables" as v;
 
 .video-player {
-  margin-right: auto;
-  margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: var(--background-inverted);
 
   @media (max-width: v.$mobile-width-only) {
     width: 280px;
@@ -61,4 +60,10 @@
     width: 800px;
     height: 500px;
   }
+}
+
+.video-player__button-play {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

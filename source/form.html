@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Форма отзыва</title>
-    <!--    <link rel="icon" href="favicon.ico" />-->
-    <link href="./css/style.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -55,14 +60,14 @@
         <section class="form-section">
           <h1 class="form-section__title heading">Оставьте свой отзыв</h1>
           <p class="form-section__description text-description">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них,<br />
+            Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них,&#8196;<br />
             а&nbsp;также о посещенных вами достопримечательностях
           </p>
 
           <form class="form-section__form-review form-review" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-review__wrapper">
               <div class="form-review__fieldset fieldset fieldset--text-inputs">
-                <h2 class="fieldset__title heading">Представьтесь:</h2>
+                <h2 class="fieldset__title fieldset__title--column heading">Представьтесь:</h2>
                 <ul class="fieldset__list fieldset__list--name">
                   <li class="fieldset__item field">
                     <label class="field__label field__label--text text-label" for="name">Имя*:</label>
@@ -93,7 +98,7 @@
                   <li class="fieldset__item field">
                     <label class="field__label field__label--text text-label" for="patronymic">Отчество:</label>
                     <input
-                      class="field__input text-input"
+                      class="field__input field__input--patronymic text-input"
                       type="text"
                       id="patronymic"
                       name="patronymic"
@@ -105,7 +110,7 @@
               </div>
 
               <div class="form-review__fieldset fieldset fieldset--text-inputs">
-                <h2 class="fieldset__title heading">Контактная информация:</h2>
+                <h2 class="fieldset__title fieldset__title--column heading">Контактная информация:</h2>
                 <ul class="fieldset__list fieldset__list--contacts">
                   <li class="fieldset__item field">
                     <label class="field__label field__label--text text-label" for="phone">Контактный телефон*:</label>
@@ -187,7 +192,9 @@
 
             <div class="form-review__fieldset form-review__fieldset--control fieldset">
               <div class="fieldset__line-container">
-                <h2 class="fieldset__title fieldset__title--decorated heading">Посещенные достопримечательности:</h2>
+                <h2 class="fieldset__title fieldset__title--decorated fieldset__title--landmarks heading">
+                  Посещенные достопримечательности:
+                </h2>
               </div>
               <ul class="fieldset__list fieldset__list--checkbox">
                 <li class="fieldset__item field">
@@ -216,7 +223,7 @@
 
                 <li class="fieldset__item field">
                   <label class="field__control control">
-                    <input class="control__input visually-hidden" type="checkbox" name="red-rocks" checked />
+                    <input class="control__input visually-hidden" type="checkbox" name="red-rocks" />
                     <span class="control__mark control__mark--checkbox"></span>
                     <span class="control__label">Красные скалы</span>
                   </label>
@@ -247,19 +254,19 @@
         </section>
       </main>
 
-      <div class="modal-container modal-container--close">
+      <div class="modal-container modal-container--hint-error modal-container--close">
         <div class="modal-container__modal modal modal--hint-error">
           <section class="modal__content">
             <h2 class="modal__title heading">Что-то пошло не&nbsp;так!</h2>
             <p class="modal__description text-description">
-              Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить
+              Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить
             </p>
             <button class="modal__button button" type="button">Ок</button>
           </section>
         </div>
       </div>
 
-      <div class="modal-container modal-container--close">
+      <div class="modal-container modal-container--hint-success modal-container--close">
         <div class="modal-container__modal modal modal--hint-success">
           <section class="modal__content">
             <div class="modal__text-wrapper">

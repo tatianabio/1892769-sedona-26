@@ -3,12 +3,12 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
 
-//
+//Высота участка логотипа в хедере, который перекрывает следующую секцию
 $logo-shift: 40px;
 
 :root {
   //Основной шрифт
-  --basic-font: "PT Sans", sans-serif;
+  --basic-font: "PT Sans", "Arial", sans-serif;
   //Основные цвета проекта
   --basic-primary: #81b3d2;
   --basic-secondary: #ffffff;

@@ -53,10 +53,14 @@
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%, -50%);
   display: block;
 
+  @media (max-width: v.$mobile-width-only) {
+    transform: translate(50%, -69%);
+  }
+
   @media (min-width: v.$tablet-width) {
+    transform: translate(50%, -64%);
     width: 458px;
     height: 79px;
   }

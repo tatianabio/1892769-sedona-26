@@ -23,12 +23,13 @@
 
 .search__title {
   @media (max-width: v.$mobile-width-only) {
-    margin-bottom: 25px;
+    @include text-xl-bold;
+    margin-bottom: 20px;
   }
 
   @media (min-width: v.$tablet-width) {
     @include text-xxl-bold;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 }
 

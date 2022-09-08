@@ -9,18 +9,18 @@
     height: min-content;
 
     &--hint-error {
-      margin-top: 10vh;
+      margin-top: 18vh;
       padding: 45px 42px 35px;
     }
 
     &--hint-success {
-      margin-top: 32vh;
+      margin-top: 42vh;
     }
   }
 
   @media (min-width: v.$tablet-width) {
     &--hint-error {
-      padding: 50px 47px;
+      padding: 48px 47px;
       width: 400px;
       margin: 22vh auto auto;
       height: min-content;
@@ -32,6 +32,16 @@
       height: min-content;
     }
   }
+
+  @media (min-width: v.$tablet-width) {
+    &--hint-error {
+      margin-top: 44vh;
+    }
+
+    &--hint-success {
+      margin-top: 25vh;
+    }
+  }
 }
 
 .modal__text-wrapper {
@@ -40,7 +50,7 @@
   }
 
   @media (min-width: v.$tablet-width) {
-    padding: 53px 98px 0;
+    padding: 45px 98px 0;
   }
 }
 
@@ -51,7 +61,11 @@
 
   @media (min-width: v.$tablet-width) {
     @include text-xxxl-bold;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -65,7 +79,11 @@
   }
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+
+    &--decorated {
+      margin-bottom: 53px;
+    }
   }
 }
 
@@ -77,6 +95,7 @@
     min-width: 180px;
 
     &--decorated {
+      @include text-l-bold(var(--text-inverted));
       width: 280px;
     }
   }
@@ -99,5 +118,9 @@
 
   @media (min-width: v.$tablet-width) {
     padding: 44px 91px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 42px 91px;
   }
 }

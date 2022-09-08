@@ -1,7 +1,15 @@
 @use "../variables" as v;
+@use "../mixins" as *;
 
 .profit-extra__title {
-  margin-bottom: 16px;
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    @include text-xl-bold;
+    margin-bottom: 24px;
+  }
 }
 
 .profit-extra {
@@ -37,7 +45,7 @@
   @media (min-width: v.$tablet-width) {
     width: 80px;
     height: 80px;
-    top: 59px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
   }

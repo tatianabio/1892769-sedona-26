@@ -1,4 +1,5 @@
 @use "../variables" as v;
+@use "../mixins" as *;
 
 .profit {
   &--primary {
@@ -21,18 +22,35 @@
 
 .profit__title {
   margin-bottom: 11px;
+
+  @media (min-width: v.$tablet-width) {
+    @include text-xl-bold;
+  }
+}
+
+.profit__title br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
 }
 
 .profit__serial-number {
   display: block;
-  margin-bottom: 17px;
   text-align: center;
+
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: v.$mobile-width-only) {
   .profit {
     position: relative;
-    padding: 24px 20px;
+    padding: 25px 20px;
     width: 100%;
     min-height: 165px;
 
@@ -75,7 +93,7 @@
   }
 
   .profit--secondary .profit__description {
-    max-width: 246px;
+    max-width: 248px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -91,6 +109,10 @@
       width: 100%;
     }
 
+    &--decorated {
+      padding: 40px 32px;
+    }
+
     &--devil-bridge {
       order: 1;
     }
@@ -102,6 +124,16 @@
     max-width: 290px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .profit {
+    &--decorated {
+      padding: 46px 32px;
+    }
+
+    &--devil-bridge {
+      padding: 49px 32px;
+    }
   }
 }
 
@@ -119,7 +151,7 @@
   }
 }
 
-.profit--devil-bridge br {
+.profit__description--devil-bridge br {
   @media (max-width: v.$mobile-width-only) {
     display: none;
   }
@@ -129,6 +161,16 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    display: inline;
+  }
+}
+
+.profit__title--devil-bridge br {
+  @media (max-width: v.$mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: v.$tablet-width) {
     display: inline;
   }
 }

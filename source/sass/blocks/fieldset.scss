@@ -35,6 +35,17 @@
   @media (min-width: v.$tablet-width) {
     @include text-xl-bold;
     margin-bottom: 28px;
+
+    &--column {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--landmarks {
+      margin-bottom: 26px;
+      margin-top: 5px;
+    }
   }
 }
 
@@ -102,7 +113,7 @@
 
     @media (min-width: v.$desktop-width) {
       grid-template-columns: repeat(3, 1fr);
-      padding: 17px 53px;
+      padding: 20px 11px 11px 53px;
       column-gap: 28px;
     }
   }
@@ -116,14 +127,18 @@
     }
 
     @media (min-width: v.$desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
-      padding: 31px 44px;
-      column-gap: 30px;
+      grid-template-columns: 216px 214px 197px 218px;
+      padding: 34px 10px 32px 44px;
+      column-gap: 20px;
     }
   }
 }
 
 .fieldset__textarea {
+  @media (max-width: v.$mobile-width-only) {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: v.$tablet-width) {
     margin-bottom: 6px;
   }

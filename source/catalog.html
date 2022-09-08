@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Фото и видео</title>
-    <!--    <link rel="icon" href="favicon.ico" />-->
-    <link href="./css/style.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -55,7 +60,7 @@
         <div class="catalog__intro-wrapper">
           <h1 class="catalog__title heading">Фото и видео</h1>
           <p class="catalog__description text-description">
-            Не&nbsp;можете решиться на&nbsp;путешествие из-за курса?<br />
+            Не&nbsp;можете решиться на&nbsp;путешествие из-за курса?&#8196;<br />
             Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.
           </p>
         </div>
@@ -99,6 +104,7 @@
                     src="./img/gallery-photo-1-phone@1x.jpg"
                     srcset="./img/gallery-photo-1-phone@2x.jpg 2x"
                     alt="Асфальтированная дорога на закате, проходящая рядом с горами."
+                    loading="lazy"
                   />
                 </picture>
               </a>
@@ -161,6 +167,7 @@
                     src="./img/gallery-photo-2-phone@1x.jpg"
                     srcset="./img/gallery-photo-2-phone@2x.jpg 2x"
                     alt="Растение с желтыми цветами на фоне коричневых скал."
+                    loading="lazy"
                   />
                 </picture>
               </a>
@@ -184,6 +191,7 @@
                     <use xlink:href="./img/icons/sprite.svg#like"></use>
                   </svg>
                   <span class="likes-counter__likes-number">143</span>
+                </div>
               </div>
             </li>
 
@@ -222,6 +230,7 @@
                     src="./img/gallery-photo-3-phone@1x.jpg"
                     srcset="./img/gallery-photo-3-phone@2x.jpg 2x"
                     alt="Извилистая дорога среди холмов, покрытых густым лесом."
+                    loading="lazy"
                   />
                 </picture>
               </a>
@@ -245,6 +254,7 @@
                     <use xlink:href="./img/icons/sprite.svg#like"></use>
                   </svg>
                   <span class="likes-counter__likes-number">96</span>
+                </div>
               </div>
             </li>
 
@@ -283,6 +293,7 @@
                     src="./img/gallery-photo-4-phone@1x.jpg"
                     srcset="./img/gallery-photo-4-phone@2x.jpg 2x"
                     alt="Скалы моста дьявола в лучах солнца."
+                    loading="lazy"
                   />
                 </picture>
               </a>
@@ -306,6 +317,7 @@
                     <use xlink:href="./img/icons/sprite.svg#like"></use>
                   </svg>
                   <span class="likes-counter__likes-number">254</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -314,7 +326,7 @@
         <section class="catalog__video-presentation video-presentation">
           <h2 class="video-presentation__title heading">Все еще сомневаетесь?</h2>
           <p class="video-presentation__description text-description">
-            Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они<br />
+            Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они&#8196;<br />
             не подорожали в&nbsp;очередной раз!
           </p>
 
@@ -356,13 +368,7 @@
                 target="_blank"
               >
                 <span class="visually-hidden">Мы во ВКонтакте.</span>
-                <svg
-                  class="social-link__icon"
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
+                <svg class="social-link__icon" width="24" height="24" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/icons/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
@@ -371,13 +377,7 @@
             <li class="social__item">
               <a class="social__link social-link social-link--telegram" href="https://t.me/htmlacademy" target="_blank">
                 <span class="visually-hidden">Мы в Телеграме.</span>
-                <svg
-                  class="social-link__icon"
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
+                <svg class="social-link__icon" width="24" height="24" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/icons/sprite.svg#telegram"></use>
                 </svg>
               </a>
@@ -390,13 +390,7 @@
                 target="_blank"
               >
                 <span class="visually-hidden">Мы на Ютубе.</span>
-                <svg
-                  class="social-link__icon"
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
+                <svg class="social-link__icon" width="24" height="24" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/icons/sprite.svg#youtube"></use>
                 </svg>
               </a>
@@ -404,15 +398,14 @@
           </ul>
         </div>
 
-        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML-академии.">
+        <a
+          class="main-footer__copyright copyright"
+          href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank"
+          aria-label="Сайт HTML-академии."
+        >
           <span class="copyright__text">Разработано</span>
-          <svg
-            class="copyright__icon"
-            width="27"
-            height="35"
-            role="img"
-            aria-label="Логотип HTML-академии."
-          >
+          <svg class="copyright__icon" width="27" height="35" role="img" aria-label="Логотип HTML-академии.">
             <use xlink:href="./img/icons/sprite.svg#logo-academy"></use>
           </svg>
         </a>
