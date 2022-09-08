@@ -56,3 +56,23 @@
 .search__button {
   margin: 0 auto;
 }
+
+.search__map {
+  display: block;
+  border: none;
+  width: 100%;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.search__image-map {
+  display: none;
+  object-fit: cover;
+  object-position: center;
+
+  &--nojs {
+    display: block;
+  }
+}
