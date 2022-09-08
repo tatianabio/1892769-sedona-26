@@ -12,3 +12,9 @@ navToggle.addEventListener("click", function () {
     navMain.classList.remove("main-navigation--opened");
   }
 });
+
+let interactiveMap = document.querySelector(".search__map");
+let imageMap = document.querySelector(".search__image-map");
+
+interactiveMap.classList.remove("search__map--nojs");
+imageMap.classList.remove("search__image-map--nojs");
