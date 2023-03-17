@@ -28,7 +28,7 @@
     "express": "^4.18.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.cjs",
     "build": "gulp build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
