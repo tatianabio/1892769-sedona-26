@@ -1,5 +1,6 @@
 {
   "name": "sedona",
+  "homepage": ".",
   "private": true,
   "description": "Graduation project Sedona in HTML Academy HTML & CSS level II course",
   "devDependencies": {
