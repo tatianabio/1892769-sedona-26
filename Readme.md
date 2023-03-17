@@ -3,7 +3,7 @@
 **[Deployed app](https://sedona-city.herokuapp.com/)**
 
 * Student: [Tatiana Pugacheva](https://up.htmlacademy.ru/adaptive/26/user/1892769).
-* Mentor: [Valentina Vidyaeva](https://htmlacademy.ru/profile/id189794).
+* Mentor: [Valya Vidyaeva](https://htmlacademy.ru/profile/id189794).
 * [HTML Academy](https://htmlacademy.ru/) online course: [HTML & CSS level II: Adaptive Website Coding & Automation](https://htmlacademy.ru/intensive/adaptive)
 
 ---
@@ -18,8 +18,8 @@
 
 ## Brief description
 
-* "Sedona City" is a website for Sedona City tourists that provides information about the benefits and photos of Sedona. 
-* 3 pages developed: Main, Photos and Review form.
+* "Sedona City" is a website for Sedona City tourists. 
+* 3 pages developed: *Main*, *Photos* and *Review form*.
 * All pages have responsive design and follow accessibility standards.
 * Mobile navigation menu was created with `JavaScript`.
 
@@ -27,7 +27,12 @@
 
 ## Limitations
 
-1. The project doesn't imply a page for searching for a hotel. For this reason, link `Find hotels` leads to the Main page.
-2. The project doesn't imply playing videos. For this reason, .
+**Main page**
+1. The project doesn't imply a page for searching for a hotel. So link `Find hotels` leads to *Main page*.
+**Photos Page**
+2. The project doesn't imply playing videos. So playing videos is NOT implemented.
+3. Displayed photos are supposed to be the links to their full-scale versions, however the project doesn't imply opening such links. So all displayed photos lead to *Photos page*.
+**Review Form**
+4. The project doesn't imply API.
 
 ---
