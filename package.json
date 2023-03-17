@@ -1,5 +1,5 @@
 {
-  "name": "sedona-26",
+  "name": "sedona",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
@@ -23,12 +23,15 @@
     "stylelint-config-htmlacademy": "0.1.11",
     "prettier": "^2.7.1"
   },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
   "scripts": {
+    "start": "gulp server.js",
+    "build": "gulp build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp",
     "check": "yarn editorconfig && yarn stylelint && yarn lint"
   },
   "browserslist": [
