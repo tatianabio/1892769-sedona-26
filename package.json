@@ -1,7 +1,7 @@
 {
   "name": "sedona",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Graduation project Sedona in HTML Academy HTML & CSS level II course",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
