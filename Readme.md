@@ -27,12 +27,12 @@
 
 ## Limitations
 
-**Main page**
-1. The project doesn't imply a page for searching for a hotel. So link `Find hotels` leads to *Main page*.
-**Photos Page**
+#### Main page
+1. The project doesn't imply a page for searching for a hotel. So link `Find hotels` just leads to *Main page*.
+#### Photos Page
 2. The project doesn't imply playing videos. So playing videos is NOT implemented.
-3. Displayed photos are supposed to be the links to their full-scale versions, however the project doesn't imply opening such links. So all displayed photos lead to *Photos page*.
-**Review Form**
-4. The project doesn't imply API.
+3. Displayed photos are supposed to be the links to their full-scale versions, however the project doesn't imply opening such links. So all displayed photos' links just lead to *Photos page*.
+#### Review Form
+4. The project doesn't imply API for the Review form. So processing POST-requests after submitting the form is NOT implemented.
 
 ---
