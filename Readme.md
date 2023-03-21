@@ -27,7 +27,7 @@
 
 ## Limitations
 
-#### Main page
+#### Main page 1
 1. The project doesn't imply a page for searching for a hotel. So link `Find hotels` just leads to *Main page*.
 #### Photos Page
 2. The project doesn't imply playing videos. So playing videos is NOT implemented.
