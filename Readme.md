@@ -27,7 +27,17 @@
 
 ## Demo
 
-![Demo: responsive design](gif/demo.gif)
+1. **Main page**
+
+![Demo: Main page](gif/demo-main.gif)
+
+2. **Photos page**
+
+![Demo: Photos page](gif/demo-photos.gif)
+
+3. **Review form page**
+
+![Demo: Review form page](gif/demo.gif)
 
 ---
 
