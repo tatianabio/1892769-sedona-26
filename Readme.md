@@ -33,12 +33,14 @@
 
 https://user-images.githubusercontent.com/105217283/227320237-9721c459-cbac-423c-b7fc-d4f08c12f0ed.mp4
 
+
 ---
 
 ### 2. Photos page
 
 
 https://user-images.githubusercontent.com/105217283/227320307-13192c45-ebae-45b7-9361-2856d40087e4.mp4
+
 ---
 
 **Limitations**:
@@ -49,6 +51,7 @@ https://user-images.githubusercontent.com/105217283/227320307-13192c45-ebae-45b7
 
 
 https://user-images.githubusercontent.com/105217283/227328326-6825fc45-328e-42c3-ac5d-144a9339f324.mp4
+
 ---
 
 **Limitation**: The project doesn't imply API for the Review form. So processing POST-requests after submitting the form is NOT implemented.
