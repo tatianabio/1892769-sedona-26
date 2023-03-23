@@ -29,7 +29,6 @@
 
 1. **Main page**
 
-![Demo: Main page](gif/demo-main.gif)
 
 2. **Photos page**
 
