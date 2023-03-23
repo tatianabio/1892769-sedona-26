@@ -45,7 +45,7 @@ https://user-images.githubusercontent.com/105217283/227320307-13192c45-ebae-45b7
 
 **Limitations**:
 * The project doesn't imply playing videos. So playing videos is NOT implemented. 
-* Displayed photos are supposed to be the links to their full-scale versions, however the project doesn't imply opening such links. So all displayed photos' links just lead to *Photos page*.
+* Displayed photos are supposed to be the links to their full-scale versions, however, the project doesn't imply opening such links. So all displayed photos' links just lead to *Photos page*.
 
 ### 3. Review form page
 
