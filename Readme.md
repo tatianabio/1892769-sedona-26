@@ -29,12 +29,12 @@
 
 ### 1. Main page
 
-**Limitation**: The project doesn't imply a page for searching for a hotel. So link `Find hotels` just leads to *Main page*.
-
 https://user-images.githubusercontent.com/105217283/227320237-9721c459-cbac-423c-b7fc-d4f08c12f0ed.mp4
 
-
 ---
+
+**Limitation**: The project doesn't imply a page for searching for a hotel. So link `Find hotels` just leads to *Main page*.
+
 
 ### 2. Photos page
 
