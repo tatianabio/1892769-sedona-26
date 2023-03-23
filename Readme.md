@@ -27,16 +27,15 @@
 
 ## Demo videos
 
-1. **Main page**
+### 1. Main page
 
 
 https://user-images.githubusercontent.com/105217283/227320237-9721c459-cbac-423c-b7fc-d4f08c12f0ed.mp4
 
 
 **Limitation**: The project doesn't imply a page for searching for a hotel. So link `Find hotels` just leads to *Main page*.
-___
 
-2. **Photos page**
+### 2. Photos page
 
 
 https://user-images.githubusercontent.com/105217283/227320307-13192c45-ebae-45b7-9361-2856d40087e4.mp4
@@ -45,11 +44,8 @@ https://user-images.githubusercontent.com/105217283/227320307-13192c45-ebae-45b7
 **Limitations**:
 * The project doesn't imply playing videos. So playing videos is NOT implemented. 
 * Displayed photos are supposed to be the links to their full-scale versions, however the project doesn't imply opening such links. So all displayed photos' links just lead to *Photos page*.
-#
-___
 
-3. **Review form page**
-
+### 3. Review form page
 
 
 https://user-images.githubusercontent.com/105217283/227328326-6825fc45-328e-42c3-ac5d-144a9339f324.mp4
