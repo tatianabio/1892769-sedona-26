@@ -32,11 +32,9 @@
 
 2. **Photos page**
 
-![Demo: Photos page](gif/demo-photos.gif)
+<img src="/gif/demo-photos.gif?raw=true" width="800px" alt="Demo: Photos page.">
 
 3. **Review form page**
-
-![Demo: Review form page](gif/demo.gif)
 
 ---
 
